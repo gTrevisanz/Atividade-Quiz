@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icone.ico" type="image/x-icon">
+    <title>Quiz do Palmeiras</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/Palmeiras_logo.svg.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- DIV Container - Para englobar as outras divs, tamanho total da página -->
+    <div id="container">
+
+        <!-- DIV Topo - Para o título e imagens -->
+        <div id="topoTitulo">
+            <h1 class="bungee-regular">Quiz do Palmeiras</h1>
+        </div>
+
+
+        <!-- DIV Perguntas - Para os cards de perguntas -->
+        <div id="meioPerguntas">
+            <div class="titulopadrao">
+                <h1 class="titulo">Pergunta 1</h1>
+                <h2>O ano de fundação do Palmeiras??</h2>
+            </div>
+            <div class="titulopadrao">
+                <h1 class="titulo1">Pergunta 2</h1>
+                <h2>Quantos Brasileirões o Palmeiras tem?</h2>
+            </div>
+            <div class="titulopadrao">
+                <h1 class="titulo2">Pergunta 3</h1>
+                <h2>Quantos mundiais tem o Palmeiras?</h2>
+            </div>
+        </div>
+
+
+        <!-- DIV Labels - Para as labels informativas de escolha -->
+        <span class="meioLabels">
+            <label>Escolha uma Resposta</label>
+            <label>Escolha uma Resposta</label>
+            <label>Escolha uma Resposta</label>
+        </span>
+
+
+        <!-- DIV Selects - Para os menus de select com as respostas -->
+        <div id="meioSelects">
+            <select id="opcao1">
+                <option id="opcao"> opções </option>
+                <option value="0">1945</option>
+                <option value="1">1914</option>
+                <option value="0">1899</option>
+                <option value="0">2021</option>
+                <option value="0">1913</option>
+            </select>
+
+            <select id="opcao2">
+                <option id="opcao">opções</option>
+                <option value="1">12</option>
+                <option value="0">8</option>
+                <option value="0">5</option>
+                <option value="0">10</option>
+                <option value="0">11</option>
+            </select>
+
+            <select id="opcao3">
+                <option id="opcao"> opções </option>
+                <option value="0">1</option>
+                <option value="0">2</option>
+                <option value="0">3</option>
+                <option value="1">0</option>
+                <option value="0">5</option>
+            </select>
+        </div>
+        <!-- DIV Resultado - Para a pontuação, resultado e botão de gerar pontos -->
+        <center>
+            <div id="baixoResultado">
+                <label style="color: rgb(0, 0, 0);">Resultado &nbsp; </label>
+                <input type="text" name="" id="resultado2" readonly>
+                <button onclick="MostravalorDaSelect()"> Finalizar o Quiz!!</button><br><br>
+        </center>
+        <img class="pEscudo1" src="imagens/Primeiro Escudo.png">
+        <img class="pEscudo2" src="imagens/Primeiro Escudo.png">
+
+        <img class="sEscudo1" src="imagens/Segundo Escudo.png">
+        <img class="sEscudo2" src="imagens/Segundo Escudo.png">
+
+        <img class="tEscudo1" src="imagens/Terceiro Escudo.png">
+        <img class="tEscudo2" src="imagens/Terceiro Escudo.png">
+
+        <img class="qEscudo1" src="imagens/Quarto Escudo.png" alt="">
+        <img class="qEscudo2" src="imagens/Quarto Escudo.png" alt="">
+
+
+        <script src="lógica-quiz.js"></script>
+
+</body>
+
+</html>
